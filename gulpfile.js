@@ -16,7 +16,7 @@ gulp.task("scripts", function () {
       sourceMap: true,
       sourceMapRelative: "./app"
     }))
-    .require("./app/scripts/main.js", {entry: true})
+    .require("./app/scripts/main.jsx", {entry: true})
     .bundle()
     .on("error", function handleError(err) {
       console.error(err.toString());
